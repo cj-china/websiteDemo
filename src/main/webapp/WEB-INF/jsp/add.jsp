@@ -24,7 +24,10 @@
         <tr>
             <td>分数</td>
             <td><input type="text" name="score" value="${item.score}"/></td>
-        </tr>
+        </tr
+        <tr>
+           <td><input type="submit" value="提交成绩"/></td>
+        </tr
     </table>
 
 </form>

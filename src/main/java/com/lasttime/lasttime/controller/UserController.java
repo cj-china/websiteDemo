@@ -35,7 +35,7 @@ public class UserController {
     @RequestMapping(value="addScore",method = RequestMethod.POST)
     public ModelAndView addScore(Student stu){
 
-        return new ModelAndView("addSuccess");
+        return new ModelAndView("success");
     }
 
     @RequestMapping(value = "index")
