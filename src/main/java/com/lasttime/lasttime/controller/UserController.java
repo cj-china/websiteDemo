@@ -58,4 +58,13 @@ public class UserController {
         view.addObject("stuList",stuList);
         return view;
     }
+
+    @RequestMapping(value = "delete")
+    public ModelAndView deleteById(@RequestParam("id") long id){
+        //根据id删除某个学生的信息
+          
+        ModelAndView view=new ModelAndView("detail");
+        view.addObject("stuList",stuList);
+        return view;
+    }
 }
