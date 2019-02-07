@@ -9,6 +9,7 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -64,7 +65,7 @@ public class UserController {
         //根据id删除某个学生的信息
           
         ModelAndView view=new ModelAndView("detail");
-        view.addObject("stuList",stuList);
+        view.addObject("stuList",null);
         return view;
     }
 }
